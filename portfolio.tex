@@ -1,0 +1,83 @@
+\documentclass[12pt]{report} % use larger type; default would be 10pt
+
+\title{Teaching and Learning Portfolio}
+\author{Bucky Badger}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{letterpaper}
+\geometry{margin=1in}
+\usepackage{graphicx} 
+\usepackage{hyperref}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\centering\normalfont\LARGE\bfseries}{}{-5 ex}{}
+\titleformat{name=\chapter,numberless}[display]
+  {\centering\normalfont\LARGE\bfseries}{}{-5 ex}{}
+\titlespacing*{\chapter}{0pt}{0pt}{24pt}
+
+\renewcommand*\contentsname{Portfolio Contents}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\@author}\chead{}\rhead{\@title}
+\lfoot{}\cfoot{}\rfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{0cm}
+{\Large \textbf{\@title} \par}
+\vspace{0.6cm}
+{\Large by \par}
+\vspace{0.6cm}
+{\Large \textbf{\@author} \par}
+\vspace{0.6cm}
+{\Large Winter 2016 \par}
+\vspace{1.0cm}
+\includegraphics[scale=0.5]{images/house.png} \par
+\vspace{1.0cm}
+{This portfolio submitted in partial fulfillment of the requirements for the Delta Certificate in Research, Teaching, and Learning.\par}
+\vspace{0.75cm}
+{\textbf{ Delta Program in Research, Teaching, and Learning \\ University of Wisconsin-Madison }\par}
+\vspace{0.75cm}
+\includegraphics[scale=0.5]{images/nsf.jpg}
+\includegraphics[scale=0.5]{images/delta.jpg}\ \ 
+\includegraphics[scale=0.5]{images/cirtl.png}
+\end{center}
+{\tiny The Delta Program in Research, Teaching, and Learning is a project of the Center of the Integration of Research, Teaching, and Learning (CIRTL--Grant No. 0227592).  CIRTL is a National Science Foundation sponsored initiative committed to developing and supporting a learning community of STEM faculty, post-docs, graduate students, and staff who are dedicated to implementing  and advancing effective teaching practices for diverse student audiences.  Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. For more information, please call us at 608-261-1180 or visit \url{http://www.delta.wisc.edu}. \par}
+\end{titlepage}
+
+\makeatletter
+\let\ps@plain\ps@fancy 
+\makeatother
+
+\tableofcontents
+
+\newpage
+\chapter{Introduction}
+
+\newpage
+\chapter{Teaching Philosophy}
+
+\newpage
+\chapter{Mentoring Philosophy}
+
+\newpage
+\chapter{Developing a New Course}
+
+\newpage
+\chapter{Outreach}
+
+\newpage
+\chapter{Internship Experience}
+
+\newpage
+\chapter{Other Teaching Experience}
+
+\newpage
+\chapter{CIRTL Learning Outcomes Survey}
+
+\end{document}
